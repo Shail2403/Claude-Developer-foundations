@@ -1,0 +1,26 @@
+{
+  "project": {
+    "name": "India State News API",
+    "description": "FastAPI-based REST API for managing state news with CRUD operations"
+  },
+  "python": {
+    "version": "3.12",
+    "venv": "venvapi"
+  },
+  "linting": {
+    "enabled": true,
+    "format": "black",
+    "include": ["*.py"],
+    "exclude": ["venvapi/", "__pycache__"]
+  },
+  "permissions": {
+    "bash": [
+      "pip install",
+      "pip list",
+      "python",
+      "pytest",
+      "curl"
+    ],
+    "write": ["*.py", "*.md", "*.txt"]
+  }
+}
